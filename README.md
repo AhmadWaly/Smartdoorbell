@@ -14,6 +14,9 @@ then open terminal at project directory and type
 
 then open another terminal from dist directory and type : -http-server -o 
 
+####################################################################################
+
+
 Smart Doorbell 
 
 Introduction :-
