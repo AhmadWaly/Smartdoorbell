@@ -8,11 +8,6 @@ import cv2
 import face_recognition as fr 
 from run import *
 
-awad=pd.read_csv('awad.csv').values
-ezzat=pd.read_csv('ezzat.csv').values
-waly=pd.read_csv('waly.csv').values
-ibrahim=pd.read_csv('ibrahim.csv').values
-
 
 #this function takes the image from the response as a b64 string and return it as a cv2 image
 def data_uri_to_cv2_img(uri):
@@ -42,7 +37,7 @@ def login():
         return jsonify({'type': 'error','title':'STRANGER ON THE DOOR','body':'DOOR IS LOCKED'})
     else :
         title=person + " ON THE DOOR"
-        body = 'DOOR OPENS FOR'+ person
+        body = 'DOOR OPENS FOR '+ person
         return jsonify({'type': 'error','title':title,'body':body})
 
     
