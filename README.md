@@ -1,4 +1,11 @@
-Smartdoorbell
+To run the project you have to install :-
+-flask
+-flask_cors
+-face_recognition
+then open terminal at project directory and type 
+: -export FLASK_APP=app.py
+  -flask run 
+ then open another terminal from dist directory and type : -http-server -o 
 
 Smart Doorbell 
 
